@@ -1,0 +1,23 @@
+server:
+  name: prod-server-1
+  ip: 192.168.1.10
+  port: 8080
+
+database:
+  host: localhost
+  name: app_db
+  credentials:
+    user: admin
+    password: secret123
+
+startup_script_block: |
+  #!/bin/bash
+  echo "Starting server"
+  systemctl start app
+  systemctl enable app
+
+startup_script_folded: >
+  #!/bin/bash
+  echo "Starting server"
+  systemctl start app
+  systemctl enable app

@@ -1,0 +1,13 @@
+name: Vinit
+role: DevOps Engineer
+experience_years: 1
+learning: true
+
+tools:
+  - Git
+  - Docker
+  - Kubernetes
+  - AWS
+  - GitHub Actions
+
+hobbies: [reading, fitness, blogging]

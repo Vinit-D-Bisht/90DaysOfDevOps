@@ -1,0 +1,22 @@
+Today I created my Actions pipeline and watched it run.
+
+---
+
+## Workflow File
+
+```yaml
+name: Hello GitHub Actions
+
+on:
+  push:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
